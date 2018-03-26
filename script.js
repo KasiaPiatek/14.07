@@ -1,7 +1,7 @@
 var NewComponent = React.createClass({
   proptypes: {
     element: React.PropTypes.string.isRequired,
-  }
+  },
   
   render: function() {
     return
@@ -31,8 +31,9 @@ var NewComponent = React.createClass({
             <button type="submit" className="btn btn-info">Wyślij</button>
           </form> </div>
       </div>
-  };
+  },
 });
+
 var element = React.createElement(NewComponent);
 ReactDOM.render(React.createElement(element), document.getElementById('app'));
 
