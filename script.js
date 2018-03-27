@@ -1,11 +1,8 @@
-var NewComponent = React.createClass({
-  proptypes: {
-    element: React.PropTypes.string.isRequired,
-  },
+class Nowy extends React.Component {
   
-  render: function() {
-    return
-      <div className="container">
+  render() {
+    return (
+    <div className="container">
         <div className="form">
           <form>
             <div className="form-group">
@@ -30,10 +27,10 @@ var NewComponent = React.createClass({
             </div>
             <button type="submit" className="btn btn-info">Wyślij</button>
           </form> </div>
-      </div>
-  },
-});
+      </div>)
+  }
+};
 
-var element = React.createElement(NewComponent);
-ReactDOM.render(React.createElement(element), document.getElementById('app'));
+
+ReactDOM.render(<Nowy />, document.getElementById('app'));
 
